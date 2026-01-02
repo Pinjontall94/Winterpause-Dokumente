@@ -1,0 +1,42 @@
+---
+title: "Critical Analysis Tepary Bean"
+author: "Sammi Johnson"
+date: "2026-01-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Cover Page
+
+Your name, student number, title of the paper and URL/DOI of the paper
+NAME: Sam Johnson
+MATRIKELNUMMER:
+ARTICLE:
+Moghaddam, S.M., Oladzad, A., Koh, C. et al. The tepary bean genome provides
+insight into evolution and domestication under heat stress. Nat Commun 12, 2638
+(2021). https://doi.org/10.1038/s41467-021-22858-x
+
+<div style="page-break-after: always;"></div>
+# Introduction
+
+* Short information about the paper. Summary of main aims and findings.
+    * TBD
+* Why did you choose this paper
+    * TBD
+
+# Main Body
+
+## Abstract
+
+## Introduction
+
+## Methods
+
+## Results
+
+## Discussion
+
+## Conclusion
