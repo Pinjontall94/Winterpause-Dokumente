@@ -11,8 +11,11 @@ knitr::opts_chunk$set(echo = TRUE)
 # Cover Page
 
 Author: Sammi Johnson
+
 Matrikelnummer: 8228156
+
 Article Title: The tepary bean genome provides insight into evolution and domestication under heat stress
+
 Article URL/DOI: https://doi.org/10.1038/s41467-021-22858-x
 
 <div style="page-break-after: always">
