@@ -1,0 +1,57 @@
+---
+title: "3MT - Rhizosphere Microbiome Research Continuation"
+author: "Sammi Johnson"
+date: "2026-01-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Strawberry Rhizosphere Community Composition X Abiotic Stress
+
+A followup to Lazcano, Boyd, et. al 2021:
+
+- Investigate *mechanism* and *plasticity* of beneficial plant-microbe intrxns 
+  re: abiotic stress
+- Account for: 
+  - geno x env effects (cultivar x soil, control other growing conditions)
+
+
+## Field Trial
+
+Use the same list of cultivars in Lazcano Boyd et al '21 for consistency's sake
+(unless a better cross section of comm. 🍓 cultivars re: abiotic stress 
+resistance can be determined). Trial overview:
+
+- 20 plants per plot, 0.3m raised beds
+- 
+- Treatment:
+  - field soil* with various** macronutrient and drought stress factor levels
+- Control:
+  - field soil*, standardized watering and fertilizer regimen
+  
+  
+Field soil measured by soil classification, texture, slope, conductivity, pH,
+cation exchange capacity, and percent organic matter. Additionally, levels of
+the specific, tested nutrient levels affected by the treatment groups will be
+measured as follows:
+
+- Ca:Mg ratio
+- Water content (neutron moisture gauge)
+- NPK
+
+## Measurements
+
+- Nutrition: Leaf nutrient content (Ca:Mg, NPK, Carbon) by 300mg dry weight sample
+  - Duplicate samples
+  - Measure against tomato leaf standards NIST SRM 1573A ev. 10 samples
+  - N, C with element analyzer
+  - rest with mod. USEPA acid digestion
+- Yield: Total FW, DW biomass
+- Cultivar
+- Soil microbiome community diversity and structure
+  - V4 region 16S rRNA or shotgun metagenomics (if feasible, check https://doi.org/10.3389/fmicb.2022.828977)
+  
+  
