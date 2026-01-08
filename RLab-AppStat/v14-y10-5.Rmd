@@ -1,0 +1,20 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
+```{r}
+# v14-y10-5.Rnw
+met <- read.table ( "v14-y10-DE-data.csv", header=T, sep=";", dec="," )
+met$gen <- reorder(met$gen, met$GYLD, mean)
+suppressMessages(library("emmeans"))
+emm_options(msg.interaction=FALSE,msg.nesting=FALSE)
+m.fixed  <- lm (GYLD ~ gen*loc*year + year:loc:rep, data = met)
+l <- emmeans ( m.fixed, "gen",mode="a")
+CLD(l,sort=TRUE,reversed=TRUE,alpha=0.10, adjust="none")
+```
+
+```{r}
+plot(l,comparisons=TRUE,alpha=0.10,adjust="none")
+```
+       

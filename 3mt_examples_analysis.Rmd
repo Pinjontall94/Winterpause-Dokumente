@@ -1,0 +1,60 @@
+--- title: "3mt_examples_analysis" output: html_document ---
+
+# Niamh MacSweeney - Uni Edinburgh - Adolescent Depression 3MT Transcript
+
+## Intro
+
+### Relate to a general audience/i.e. why do we care?
+
+  Our teenage years are a time of immense change. It's a whirlwind for
+our biology, our psychology, and our social worlds. Like Dorothy in
+The Wizard of Oz, were swept up into this world that we can't quite
+comprehend leaving the primary colors of our childhood behind.  We
+find ourselves stumbling through a kaleidoscope of bad hair days
+troublesome skin and pressure to keep up with the latest airs and
+Instagram.
+
+### Describe the problem/gap in current understanding
+
+  However, unlike Dorothy, navigating adolescence is not as simple as
+following the yellow brick road.  In fact, it's a time of significant
+vulnerability for mental illness, especially depression. Over half of
+depression cases emerge by the age of 25, and according to the World
+Health Organization, depression is the leading cause of illness and
+disability in youth.  Adolescent depression is typically a more severe
+form of the disorder, and it's notoriously difficult to treat.  What's
+more is that the risk for recurrence increases with each episode
+experienced.  After one depressive episode the risk for recurrence is
+60%, but by the third episode, this risk has risen to a sobering 90
+percent.  So on a closer inspection of this whirlwind it appears that
+there are prevailing winds in this direction towards mental illness
+that increase in strength with the number of depressive episodes
+experienced making it more and more difficult to move back over here
+towards well-being. It would also seem that the experience of
+depression itself makes some young people more vulnerable to further
+depressive episodes, however there are others that only experienced a
+single episode of depression.
+
+## Research Question
+
+Why is this the case?  Are there certain risk and resilience factors
+that can help explain these different trajectories?
+
+## Proposed Study
+
+To answer these questions, I'll recruit two groups of young people:
+one with a history of depression, and another who have never been
+depressed. My PhD will examine biological factors like stress response,
+psychological factors such as coping styles, as well as social factors
+like interpersonal relationships. And it's also really important that
+we give young people a voice, so I'll conduct interviews with these
+young people, to capture the lived experience of adolescent
+depression. 
+
+### Research Goal (What do you hope to find out with this study?)
+
+The goal of this research is to develop novel interventions
+so that young people can build long-term resilience against depression
+ultimately we want to change the direction of these prevailing winds
+allowing young people to pave their own yellow brick road away from
+illness and towards health.
