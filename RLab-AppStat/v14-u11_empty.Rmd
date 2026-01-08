@@ -1,0 +1,173 @@
+################################################################
+# MK-002-EN Applied Statistics / MK-002 Angewandte Statistik / #
+# MK-002-EN-DI Applied Statistics                              #
+# *** Single factor analysis of variance ***                   #
+################################################################
+
+# 1 Doughnuts example
+#####################
+
+# Load additional package(s):
+# ***************************
+
+library("dplyr")    # Provides: summarise
+
+
+# Data input
+# **********
+
+# There are different ways for entering the data. Make sure that the final
+# data frame corresponds to your data table from the lecture slides.
+amount <- c ( 64, 78, 75, 55,  72, 91, 93, 66,  68, 97, 78, 49,
+              77, 82, 71, 64,  56, 85, 63, 70,  95, 77, 76, 68 )
+
+fattype <- gl( n=4, k=1, length=4*6, labels=c("f1","f2","f3","f4") )
+fattype
+
+# *********************************************************************
+# For comparison:
+fattype1 <- gl( n=4, k=6, length=4*6, labels=c("f1","f2","f3","f4") )
+fattype1 # wrong!
+# *********************************************************************
+
+# An alternative for unbalanced data:
+fattype2 <- factor( c( rep("f1", times=6), rep("f2", times=6),   # Works also for 
+                       rep("f3", times=6), rep("f4", times=6)) ) # unbalanced data
+
+# *********************************************************************
+# command from the inside out:
+
+rep("f1", times=6)
+c( rep("f1", times=6), rep("f2", times=6),   
+   rep("f3", times=6), rep("f4", times=6))
+
+factor( c( rep("f1", times=6), rep("f2", times=6),   
+           rep("f3", times=6), rep("f4", times=6)))
+
+# With different numbers:
+factor( c( rep("f1", times=2), rep("f2", times=1),   
+           rep("f3", times=5), rep("f4", times=6)))
+
+# The same as above:
+fattype2 <- factor( c( rep("f1", times=6), rep("f2", times=6),   # Works also for 
+                       rep("f3", times=6), rep("f4", times=6)) ) # unbalanced data
+
+# **********************************************************************
+
+# We arranged our fat types in a different way and have to adjust
+# the absorbed vector accordingly.
+
+amount2 <- c(64, 72, 68, 77, 56, 95,  # fat type 1
+            78, 91, 97, 82, 85, 77,  # fat type 2
+            75, 93, 78, 71, 63, 76,  # fat type 3
+            55, 66, 49, 64, 70, 68)  # fat type 4
+
+# Combine vectors into data frame:
+donuts2 <- data.frame(fat = fattype2,
+                      absorbed = amount2)
+
+# Combine vectors into data frame, with data from first version:
+donuts <- data.frame(fat = fattype,
+                     absorbed = amount)
+
+ # Have a look at the data frame:
+donuts
+
+# Check the structure of the data:
+str(donuts)
+
+
+# Boxplots:
+# *********
+
+boxplot ( absorbed ~ fat,            # Box and Whisker plot
+          range = 0,                 # Min, max, quartiles, median
+          data=donuts)               # Name of the dataset
+
+# Prettier:
+par ( mar=c(4,4,1,1) )               # No. of lines around the plot for
+# axis descriptions: bltr
+boxplot (absorbed~fat,               # Model
+         ylab="Fat absorbed [g]",    # Label for y axis
+         xlab="Type of fat",         # Label for x axis
+         col ="lightblue",           # Color of boxes
+         range=0,                    # Whisker to min and max
+         ylim=c(50,100),             # Range of y axis
+         data=donuts)           
+
+# What do you see?
+
+# Export plot into a file:
+png ( file="donuts-boxplot.png",     # Redirect graphics to a png file
+      units="in", height=6, width=8, # Size of the picture
+      res=360,pointsize=13 )         # Pixel resolution, and font size
+
+par ( mar=c(4,4,1,1) )               # No. of lines around the plot for
+                                     # axis descriptions: bltr
+boxplot (absorbed~fat,               # Model
+         ylab="Fat absorbed [g]",    # Label for y axis
+         xlab="Type of fat",         # Label for x axis
+         col ="lightblue",           # Color of boxes
+         range=0,                    # Whisker to min and max
+         ylim=c(50,100),             # Range of y axis
+         data=donuts)    
+
+dev.off()                            # Important: Close file!!
+
+
+# Descriptive statistics
+# **********************
+
+
+
+
+
+
+# Attach the data frame:
+# **********************
+
+attach (donuts)                                # Use this data set
+
+# DO NOT FORGET TO DETACH AFTER YOU ARE FINISHED!
+
+
+# Bartlett test
+# *************
+
+
+
+
+# Analysis of variance
+# ********************
+
+
+
+
+# Estimation of effects
+# *********************
+
+
+
+
+# Graphical analysis of outliers and residuals
+# ********************************************
+
+plot( cooks.distance( aov(absorbed ~fat) ) ) # Greater than 1?
+
+par( mfrow=c(2,2) )                          # Four displays
+plot( aov(absorbed ~fat) )                   # Diagnostic plots
+
+source("v14-u11-00.R")                       # Alternative
+check.residuals ( aov(absorbed ~fat) )       # diagnostic plots
+
+
+# Detach the data frame:
+# **********************
+
+detach(donuts) # Important!
+
+
+# 2 Cleaning up
+###############
+
+rm(list = ls())

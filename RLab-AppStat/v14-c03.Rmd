@@ -1,0 +1,33 @@
+---
+title: "Packages for RLab"
+author: "Sammi Johnson"
+date: "2026-01-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library("GAD", warn.conflicts=F)
+library("car", warn.conflicts=F)
+library("dplyr", warn.conflicts=F)
+library("emmeans", warn.conflicts=F)
+library("ggplot2", warn.conflicts=F)
+library("knitr", warn.conflicts=F)
+library("lattice", warn.conflicts=F)
+library("lme4", warn.conflicts=F)
+library("lmerTest", warn.conflicts=F)
+library("lsmeans", warn.conflicts=F)
+library("MASS", warn.conflicts=F)
+library("MCPMod", warn.conflicts=F)
+library("multcomp", warn.conflicts=F)
+library("multcompView", warn.conflicts=F)
+library("mvtnorm", warn.conflicts=F)
+library("nlme", warn.conflicts=F)
+library("pbkrtest", warn.conflicts=F)
+library("shiny", warn.conflicts=F)
+library("sommer", warn.conflicts=F)
+```
+

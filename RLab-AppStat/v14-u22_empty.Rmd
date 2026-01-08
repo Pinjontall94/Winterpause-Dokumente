@@ -1,0 +1,154 @@
+################################################################
+# MK-002-EN Applied Statistics / MK-002 Angewandte Statistik / #
+# MK-002-EN-DI Applied Statistics                              #
+# *** Multiple pairwise comparisons and linear contrasts ***   #
+################################################################
+
+# 1 Pairwise comparisons
+########################
+
+# Load required packages:
+library("emmeans")  # Provides: emmeans, test, contrast
+library("multcomp") # Provides: cld
+library("dplyr")    # Provides: summarise
+
+# Read data:
+dueng <- read.table ( "v14-u22-01.csv", header=TRUE, sep=";", dec=",",
+                      stringsAsFactors = TRUE)
+
+# Overview over the data set
+
+str (dueng)
+boxplot( yield ~ fert, data=dueng )
+
+
+# Descriptive statistics
+
+ %>% group_by( ) %>%
+  summarise ( n=n(), mean=mean( ), var=var( ),
+              min=min( ), max=max( ))
+
+
+# Analysis of variance
+# Global test of the ANOVA:
+model.1 <- aov ( yield ~ fert, data=dueng)  
+summary (model.1) 
+
+
+# Means and standard errors
+
+# Calculation of means and respective standard errors with the emmeans command:
+emm.f <- emmeans ( model.1, ~fert ) # Means of factor levels
+emm.f
+
+
+# Standard errors for a mean (sem) and for a difference between means (sed):
+summary(model.1)[[ ]][ , ]
+( sem <- sqrt( / )  )
+# 140.9447 is the residual variance from the ANOVA.
+( sed <- sqrt( / ) * sqrt( ) )
+
+
+# Least significant difference on basis of the t-distribution
+alpha <- 0.05
+( lsd <- qt(1-alpha/2,20) * sed)
+
+# Least significant difference on basis of the Tukey-distribution
+alpha <- 0.05
+( hsd <- qtukey(1-alpha,5,20) * sem)
+
+
+# t-test
+# Comparison of factor levels CCr-2 with Man, using a t-test
+31.648 - 51.642
+( t.test.statistic <- -19.994 / sed )
+( p.t <- 2 * pt ( abs(-2.663), lower.tail=FALSE, df= ) )
+
+# t-tests for all pairwise comparisons of factor levels:
+test ( contrast ( emm.f, "pairwise"),
+       adjust="none")
+
+
+# Tukey test:
+( tukey.test.statistic <- 19.994 / sem )
+( p.tukey <- ptukey (tukey.test.statistic, nmeans= , df= , lower.tail=FALSE))
+
+# The Tukey test for all pairwise comparisons:
+test ( contrast ( emm.f, "pairwise"),
+       adjust=" ")
+
+
+# Compact letter display:
+cld ( emm.f, adjust=" ")
+
+
+# Dunnett-Test
+# Comparisons with a control, adjustment for multiple comparisons
+
+levels(dueng$fert)
+test ( contrast (emm.f, "trt.vs.ctrl", ref= ),
+       side=" " ,
+       adjust="mvt")  # makes use of the multivariate t distribution
+
+# Results are not exactly repeatable!
+
+
+# 2 Linear contrasts
+####################
+
+# Orthogonal contrasts
+# No adjustment necessary.
+# Check the order of the factor levels first!
+levels(dueng$fert)
+
+# Example for multiplication to check orthogonality:
+c( 1, -1, 0, 0, 0 ) %*% c( 2, 2, 2, -3, -3 )
+# Note that multiplication is done with a %*% operator!
+
+C1 <- list ( " CCr-1 vs CCr-2" = c(  ,  ,  ,  ,   ) ,
+             " Min-A vs Min-B" = c(  ,  ,  ,  ,   ) ,
+             " Org vs Min" =     c(  ,  ,  ,  ,   ) ,
+             " CCr vs Man" =     c(  ,  ,  ,  ,   ) )
+
+test ( contrast ( emm.f, C1 ),
+       adjust="none")
+            
+
+# Manure vs. other fertilizers
+# Hochberg adjustment
+
+C2 <- list ( "Man vs CCr1 " = c( -1, 0, 1, 0, 0 ) ,
+             "Man vs CCr2 " = c( 0, -1, 1, 0, 0 ) ,
+             "Man vs Min-A" = c( 0, 0, 1, -1, 0 ) ,
+             "Man vs Min-B" = c( 0, 0, 1, 0, -1 ) )
+
+test ( contrast ( emm.f, C2 ),
+       adjust="hochberg")
+
+# The test can be carried out one-sided and be used
+# as an alternative to the Dunnett test:
+
+test ( contrast ( emm.f, C2 ),
+       side=">",
+       adjust="hochberg")
+
+
+# Two standards / three treatments
+# Adjustment with false discovery rate
+
+C3 <- list ( " Min-A vs CCr1" = c(-1, 0, 0, 1, 0 ) ,
+             " Min-A vs CCr2" = c( 0,-1, 0, 1, 0 ) ,
+             " Min-A vs Man " = c( 0, 0,-1, 1, 0 ) ,
+             " Min-B vs CCr1" = c(-1, 0, 0, 0, 1 ) ,
+             " Min-B vs CCr2" = c( 0,-1, 0, 0, 1 ) ,
+             " Min-B vs Man " = c( 0, 0,-1, 0, 1 ) )
+
+test ( contrast ( emm.f, C3 ),
+       adjust="fdr")
+
+
+# 3 Cleaning up
+###############
+
+rm(list = ls())
+            

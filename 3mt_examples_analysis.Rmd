@@ -1,4 +1,9 @@
---- title: "3mt_examples_analysis" output: html_document ---
+--- 
+title: "3mt_examples_analysis" 
+author: "Sammi Johnson"
+date: "2026-01-08"
+output: html_document
+---
 
 # Niamh MacSweeney - Uni Edinburgh - Adolescent Depression 3MT Transcript
 
