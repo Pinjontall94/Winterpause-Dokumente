@@ -1,52 +1,79 @@
-################################################################
-# MK-002-EN Applied Statistics / MK-002 Angewandte Statistik / #
-# MK-002-EN-DI Applied Statistics                              #
-# *** Multiple pairwise comparisons and linear contrasts ***   #
-################################################################
+---
+title: "Multiple pairwise comparisons and linear contrasts"
+author: "Sammi Johnson"
+date: "2026-01-09"
+output: html_document
+---
 
-# 1 Pairwise comparisons
-########################
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
-# Load required packages:
+## 1 Pairwise comparisons
+
+
+Load required packages:
+```{r}
 library("emmeans")  # Provides: emmeans, test, contrast
 library("multcomp") # Provides: cld
 library("dplyr")    # Provides: summarise
-
-# Read data:
-dueng <- read.table ( "v14-u22-01.csv", header=TRUE, sep=";", dec=",",
-                      stringsAsFactors = TRUE)
-
-# Overview over the data set
-
-str (dueng)
-boxplot( yield ~ fert, data=dueng )
+```
 
 
-# Descriptive statistics
+Read data:
+```{r}
+dueng <- read.table("data/v14-u22-01.csv", header=TRUE, sep=";", dec=",",
+                    stringsAsFactors = TRUE)
+```
 
- %>% group_by( ) %>%
+
+Overview over the data set
+```{r}
+str(dueng)
+boxplot(yield ~ fert, data=dueng)
+```
+
+
+## Descriptive statistics
+
+```{r}
+dueng %>% group_by( ) %>%
   summarise ( n=n(), mean=mean( ), var=var( ),
               min=min( ), max=max( ))
+```
 
 
-# Analysis of variance
-# Global test of the ANOVA:
-model.1 <- aov ( yield ~ fert, data=dueng)  
-summary (model.1) 
+Analysis of variance
+Global test of the ANOVA:
+```{r}
+model.1 <- aov(yield ~ fert, data=dueng)  
+summary(model.1)
+```
 
 
-# Means and standard errors
 
-# Calculation of means and respective standard errors with the emmeans command:
-emm.f <- emmeans ( model.1, ~fert ) # Means of factor levels
-emm.f
+## Means and standard errors
+
+Calculation of means and respective standard errors with the emmeans command:
+```{r}
+dueng %>% group_by( ) %>%
+  summarise ( n=n(), mean=mean( ), var=var( ),
+              min=min( ), max=max( ))
+```
 
 
-# Standard errors for a mean (sem) and for a difference between means (sed):
+Standard errors for a mean (sem) and for a difference between means (sed):
+```{r}
 summary(model.1)[[ ]][ , ]
 ( sem <- sqrt( / )  )
-# 140.9447 is the residual variance from the ANOVA.
-( sed <- sqrt( / ) * sqrt( ) )
+```
+
+140.9447 is the residual variance from the ANOVA.
+```{r}
+summary(model.1)[[ ]][ , ]
+( sem <- sqrt( / )  )
+```
+
 
 
 # Least significant difference on basis of the t-distribution
