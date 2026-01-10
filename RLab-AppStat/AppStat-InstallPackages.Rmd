@@ -1,7 +1,11 @@
-################################################################################ 
-# R packages Applied Statistics 2025-10
-################################################################################ 
+---
+title: "R packages Applied Statistics 2025-10"
+author: "Sammi Johnson"
+date: "2026-01-08"
+output: html_document
+---
 
+```{r}
 p <- c("GAD",
        "car",
        "dplyr",
@@ -23,4 +27,6 @@ p <- c("GAD",
 
 repos <- "https://ftp.gwdg.de/pub/misc/cran/"
 install.packages ( p, dependencies = T, repos = repos)
+```
+
   
