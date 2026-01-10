@@ -1,1 +1,0 @@
-critical-analysis-tepary-bean.Rmd
