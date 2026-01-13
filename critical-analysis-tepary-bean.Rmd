@@ -59,22 +59,36 @@ Article URL/DOI: https://doi.org/10.1038/s41467-021-22858-x
     * Frijol Bayo:
       * WGS'd (whole-genome shotgun sequenced) with Illumina X10 and HiSeq
       * Standard (long read de novo) sequencing with Pacbio RS platform for contextual scaffolding (lkup)
-      * Assembly:
-        * MECAT assembler v1.0
-        * ARROW v2,2,2
-        * 
+      * Assembly (nums of results and versions of software all listed):
+        * Screen for mito, plast, and phix contam
+        * MECAT assembler
+        * ARROW
+        * JUICER for IDing misjoins, common bean syteny, and hi-c scaffolding
+          * misjoins resolved
+          * orientation, ordering, and joining of scaffolds
+          * signif telomeric region ID'd with TTTAGGG_n repeat
+          * remaining scaffolds dealt with
+        * BWA-MEM: aligning ~100x Illumina WGS reads
+        * GATK UnifiedGenotyper: use aligned WGS reads to correct INDELs and homozyg SNPs in consensus release
+        * decontam with blastn and blastx against known microbe proteins
 
     * W6:
-      * 
+      *  Chromium 10x library
+      * DenovoMAGIC2
+      * aligned by flanking snp chip markers with BWA scaffolds
+      * confirmed order with single oxford nanopore library
   Standard
 * Are they described in sufficient details (for example software and software version) to reproduce the research?
-  * TBD
+  * Yes, all subsections of the 
 * Are the methods state of the art or is the approach outdated? (for example short reads used for assembly when long reads could be produced)
-  * TBD
+  * Most approaches seem up to date, though the platform for long reads (PacBio RS) is outdated by two generations (RSII and Sequel) of SMRT
+  sequencing
 * Is the data/code publicly available?
-  * TBD
+  * The data is all available on publicly accessible archives under bioproject PRJNA607288. The versions of all used software were listed, but
+  there isn't a repository for the pipeline, so presumably these were processed interactively.
 * Can you pinpoint any weaknesses of the study design?
-  * TBD
+  * The lack of a documented software pipeline, especially with respect to the command line flags used for each step. These aren't provided in
+  the paper, and thus must be inferred from the usecases described in the methods section.
 
 ## Results
 * Can the results section be easily followed? Are there subheadings to help guide the reader?
