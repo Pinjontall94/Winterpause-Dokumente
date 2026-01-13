@@ -32,21 +32,41 @@ Article URL/DOI: https://doi.org/10.1038/s41467-021-22858-x
 
 ## Abstract
 * Does it reflect content of the paper?
-  * TBD
+  * Yes, the article reflects the content of the paper, providing a short description of the understood relation between
+  tepary and common bean species before elucidating how the genetic research carried out in the study supports the utility
+  of this relationship with respect to common bean aridity and heat-resistance breeding efforts in a changing climate.
 * Does it describe the main findings?
-  * TBD
+  * Yes, see above.
 * Is it accessible to more general audience?
-  * TBD
+  * One could argue the abstract is accessible to an audience with a passing knowledge of biology, insofar as
+  knowing what a genome is in broad strokes as a corpus of a species' genetic information.
 
 ## Introduction
 * Does it give sufficient background to understand the rationale for research?
-  * TBD
+  * Yes, the study presents the rationale upfront as very directly impacting the availability of the world's edible protein, mostly
+  from common bean, as dependent on increasing temperature and aridity abiotic stress. Moreover, it makes the case that
+  understanding the mechanisms of these resistances (on display in the closely-related tepary bean) will be crucial in maintaining
+  and improving common bean crop performance. 
 * Does it link/refer to previous research?
-  * TBD
+  *  Yes, it links to prior research establishing tepary bean as a close enough relative to common bean to serve as a key source of 
+  heat and drought tolerance, and that hybridization attempts have succeeded in conferring beneficial traits both to and from common
+  bean.
 
 ## Methods
 * To your knowledge, are the methods appropriate?
-  * TBD
+  * To my knowledge, yes, their methodology was sound. The germplasm for Frijol Bayo was purified with 3 generations in the screenhouse,
+  and W6 selfed for several generations from an existing 1955 USDA accession. Overview:
+    * Frijol Bayo:
+      * WGS'd (whole-genome shotgun sequenced) with Illumina X10 and HiSeq
+      * Standard (long read de novo) sequencing with Pacbio RS platform for contextual scaffolding (lkup)
+      * Assembly:
+        * MECAT assembler v1.0
+        * ARROW v2,2,2
+        * 
+
+    * W6:
+      * 
+  Standard
 * Are they described in sufficient details (for example software and software version) to reproduce the research?
   * TBD
 * Are the methods state of the art or is the approach outdated? (for example short reads used for assembly when long reads could be produced)
