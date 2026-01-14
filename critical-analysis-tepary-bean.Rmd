@@ -36,11 +36,14 @@ Article URL/DOI: <https://doi.org/10.1038/s41467-021-22858-x>
 ## Abstract
 
 -   Does it reflect content of the paper?
-    -   Yes, the article reflects the content of the paper, providing a short description of the understood relation between tepary and common bean species before elucidating how the genetic research carried out in the study supports the utility of this relationship with respect to common bean aridity and heat-resistance breeding efforts in a changing climate.
+
 -   Does it describe the main findings?
-    -   Yes, see above.
+
 -   Is it accessible to more general audience?
-    -   One could argue the abstract is accessible to an audience with a passing knowledge of biology, insofar as knowing what a genome is in broad strokes as a corpus of a species' genetic information.
+
+    One could argue the abstract is accessible to an audience with a passing knowledge of biology, insofar as knowing what a genome is in broad strokes as a corpus of a species' genetic information.
+
+    The abstract reflects the content of the paper, providing a short description of the findings that establish tepary as a close relative of common bean, and how this could be utilized in heat-resistance breeding efforts for important protein legumes in a changing climate.
 
 ## Introduction
 
@@ -67,14 +70,12 @@ Article URL/DOI: <https://doi.org/10.1038/s41467-021-22858-x>
 -   Can the results section be easily followed? Are there subheadings to help guide the reader?
     -   Yes and yes [expand]
 -   Are the figures readable and is the information well presented? Are the legends/captions sufficient to understand the figures even without reading the whole text in detail?
-    -   Yes
-    -   Yes, with the prerequisite of understanding the underlying concepts. They used a gene expression network diagram particularly well to explain
+    -   Yes, the figures are well presented, given the complexity they encompass.
+    -   The legends and captions are succint but sufficient, with the prerequisite of understanding the underlying concepts. They used a gene expression network diagram particularly well to explain heat stress response differences between common and tepary bean.
 -   Do the text and figures complement each other well or are there repetitions which could be avoided? Are all figures/tables mentioned in the text? Does the text expand on them?
-    -   TBD
-    -   TBD
-    -   TBD
+    -   Likewise, the underlying text and said figures complement each other well, certainly helping me understand some less intuitive relationships. All figures are referenced when the results reaches a point where text begins to hit its limit as an expressive medium. And, for those who are familiar with the analytical techniques and measurements presented in the figures, the text provides needed context.
 -   Are there sections of text or figures/tables which are difficult to understand?
-    -   TBD
+    -   Most of the results text and visuals are understandable intuitively. The paper does a good job making it clear which bean is being discussed at any given time, so it avoids that possible source of confusion. In figure 1d, the estimated divergence time chart between the bean species, I had a difficult time seeing the overlapping thin lines clearly to find any particular bean-bean relationship. That being said, I understood the point it was making with respect to the text (that tepary is a recently divergent sister taxon of common bean) and I don't think that could have been avoided without compromising clarity further.
 -   Do the results appear reliable? Are there sufficient quality checks?
     -   TBD
     -   TBD
