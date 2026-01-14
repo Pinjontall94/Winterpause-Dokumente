@@ -27,9 +27,12 @@ Article URL/DOI: <https://doi.org/10.1038/s41467-021-22858-x>
 # Introduction
 
 -   Short information about the paper. Summary of main aims and findings.
-    -   This paper aims to report on the assembly of a reference genome for tepary bean (P. actufolius), and provide insight into how its heat and drought resistance works. This research is done explicitly in the context of climate change threatening the most important legume protein for humans, common bean, and how understanding tepary bean in this way may present opportunities for trait development in common bean.
+
 -   Why did you choose this paper
-    -   I grew up in an arid environment and have been long been interested in how crop species or landraces can manage to survive in those conditions, especially as more of the world faces aridity with climate change.
+
+    This paper aims to report on the assembly of a reference genome for tepary bean (*P. actufolius*), and provide insight into how its heat and drought resistance works. This research is done explicitly in the context of climate change threatening the most important legume protein for humans, common bean, and how understanding tepary bean in this way may present opportunities for trait development in common bean.
+
+    I grew up in an arid environment and have been long been interested in how crops can manage to survive in those conditions, especially as more of the world faces aridity with climate change.
 
 # Main Body
 
