@@ -51,22 +51,34 @@ Article URL/DOI: <https://doi.org/10.1038/s41467-021-22858-x>
 ## Introduction
 
 -   Does it give sufficient background to understand the rationale for research?
-    -   Yes, the study presents the rationale upfront as very directly impacting the availability of the world's edible protein, mostly from common bean, as dependent on increasing temperature and aridity abiotic stress. Moreover, it makes the case that understanding the mechanisms of these resistances (on display in the closely-related tepary bean) will be crucial in maintaining and improving common bean crop performance.
--   Does it link/refer to previous research?
-    -   Yes, it links to prior research establishing tepary bean as a close enough relative to common bean to serve as a key source of heat and drought tolerance, and that hybridization attempts have succeeded in conferring beneficial traits both to and from common bean.
+
+    Does it link/refer to previous research?
+
+    The study presents the rationale upfront as very directly impacting the availability of the world's edible protein, mostly from common bean, as dependent on increasing temperature and aridity abiotic stress. Moreover, it makes the case that understanding the mechanisms of these resistances (on display in the closely-related tepary bean) will be crucial in maintaining and improving common bean crop performance.
+
+    Further, the article links to prior research establishing tepary bean as a close enough relative to common bean to serve as a key source of heat and drought tolerance, and that hybridization attempts have succeeded in conferring beneficial traits both to and from common bean.
 
 ## Methods
 
 -   To your knowledge, are the methods appropriate?
-    -   To my knowledge, yes, their methodology was sound. The germplasm for Frijol Bayo was purified with 3 generations in the screenhouse, and W6 selfed for several generations from an existing 1955 USDA accession. Frijol Bayo was sequenced with WGS and PacBio long reads to create the scaffolds for alignment. W6 tepary's genome was built from a Chromium 10x de novo library, aligning reads by flanking illumina SNPs with BWA scaffolds. The two genomes were measured for quality (BUSCO) and size, then annotated against a specific library of plant protein-encoding seqs.
+
 -   Are they described in sufficient details (for example software and software version) to reproduce the research?
-    -   Yes, all subsections of the methods list the assembly, alignment, statistical, and visualization software used, along with their associated versions and source code repositories where available.
+
 -   Are the methods state of the art or is the approach outdated? (for example short reads used for assembly when long reads could be produced)
-    -   Most approaches seem up to date, though the platform for long reads (PacBio RS) is outdated by two generations (RSII and Sequel) of SMRT sequencing
+
 -   Is the data/code publicly available?
-    -   The data is all available on publicly accessible archives under bioproject PRJNA607288. The versions of all used software were listed, but there isn't a repository for the pipeline, so presumably these were processed interactively.
+
 -   Can you pinpoint any weaknesses of the study design?
-    -   Not all software used has the command line flags listed. Thus, the parameters for those programs must be inferred from the use cases described in the methods section. Additionally the overall pipeline is not in a dedicated repository, leading me to believe that, outside of pre-existing pipelines, the overall process must have been handled interactively.
+
+    To the best of my understanding, the authors' methodology was sound. The germplasm for Frijol Bayo was purified with 3 generations in the screenhouse, and W6 selfed for several generations from an existing 1955 USDA accession. Frijol Bayo was sequenced with WGS and PacBio long reads to create the scaffolds for alignment. W6 tepary's genome was built from a Chromium 10x de novo library, aligning reads by flanking illumina SNPs with BWA scaffolds. The two genomes were measured for quality (BUSCO) and size, then annotated against a specific library of plant protein-encoding seqs.
+
+    All subsections of the methods list the assembly, alignment, statistical, and visualization software used, along with their associated versions and source code repositories where available.
+
+    Most approaches seem up to date, though the platform for long reads (PacBio RS) is outdated by two generations (RSII and Sequel) of SMRT sequencing
+
+    The data is all available on publicly accessible archives under bioproject PRJNA607288. The versions of all used software were listed, but there isn't a repository for the pipeline, so presumably these were processed interactively.
+
+    Not all software used has the command line flags listed. Thus, the parameters for those programs must be inferred from the use cases described in the methods section. Additionally the overall pipeline is not in a dedicated repository, leading me to believe that, outside of pre-existing pipelines, the overall process must have been handled interactively.
 
 ## Results
 
