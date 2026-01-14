@@ -8,6 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 # Cover Page
 
 Author: Sammi Johnson
@@ -16,84 +17,92 @@ Matrikelnummer: 8228156
 
 Article Title: The tepary bean genome provides insight into evolution and domestication under heat stress
 
-Article URL/DOI: https://doi.org/10.1038/s41467-021-22858-x
+Article URL/DOI: <https://doi.org/10.1038/s41467-021-22858-x>
 
-<div style="page-break-after: always">
-  <hr>
+::: {style="page-break-after: always"}
+<hr>
+
 </div>
+
 # Introduction
 
-* Short information about the paper. Summary of main aims and findings.
-  * TBD
-* Why did you choose this paper
-  * TBD
+-   Short information about the paper. Summary of main aims and findings.
+    -   TBD
+-   Why did you choose this paper
+    -   TBD
 
 # Main Body
 
 ## Abstract
-* Does it reflect content of the paper?
-  * TBD
-* Does it describe the main findings?
-  * TBD
-* Is it accessible to more general audience?
-  * TBD
+
+-   Does it reflect content of the paper?
+    -   TBD
+-   Does it describe the main findings?
+    -   TBD
+-   Is it accessible to more general audience?
+    -   TBD
 
 ## Introduction
-* Does it give sufficient background to understand the rationale for research?
-  * TBD
-* Does it link/refer to previous research?
-  * TBD
+
+-   Does it give sufficient background to understand the rationale for research?
+    -   TBD
+-   Does it link/refer to previous research?
+    -   TBD
 
 ## Methods
-* To your knowledge, are the methods appropriate?
-  * TBD
-* Are they described in sufficient details (for example software and software version) to reproduce the research?
-  * TBD
-* Are the methods state of the art or is the approach outdated? (for example short reads used for assembly when long reads could be produced)
-  * TBD
-* Is the data/code publicly available?
-  * TBD
-* Can you pinpoint any weaknesses of the study design?
-  * TBD
+
+-   To your knowledge, are the methods appropriate?
+    -   TBD
+-   Are they described in sufficient details (for example software and software version) to reproduce the research?
+    -   TBD
+-   Are the methods state of the art or is the approach outdated? (for example short reads used for assembly when long reads could be produced)
+    -   TBD
+-   Is the data/code publicly available?
+    -   TBD
+-   Can you pinpoint any weaknesses of the study design?
+    -   TBD
 
 ## Results
-* Can the results section be easily followed? Are there subheadings to help guide the reader?
-  * TBD
-  * TBD
-* Are the figures readable and is the information well presented? Are the legends/captions sufficient to understand the figures even without reading the whole text in detail?
-  * TBD
-  * TBD
-* Do the text and figures complement each other well or are there repetitions which could be
-avoided? Are all figures/tables mentioned in the text? Does the text expand on them?
-  * TBD
-  * TBD
-  * TBD
-* Are there sections of text or figures/tables which are difficult to understand?
-  * TBD
-* Do the results appear reliable? Are there sufficient quality checks?
-  * TBD
-  * TBD
-* Can you see any inconsistencies in between the figures and text?
-  * TBD
-* Are there any potential errors in the results section?
-  * TBD
+
+-   Can the results section be easily followed? Are there subheadings to help guide the reader?
+    -   TBD
+    -   TBD
+-   Are the figures readable and is the information well presented? Are the legends/captions sufficient to understand the figures even without reading the whole text in detail?
+    -   TBD
+    -   TBD
+-   Do the text and figures complement each other well or are there repetitions which could be avoided? Are all figures/tables mentioned in the text? Does the text expand on them?
+    -   TBD
+    -   TBD
+    -   TBD
+-   Are there sections of text or figures/tables which are difficult to understand?
+    -   TBD
+-   Do the results appear reliable? Are there sufficient quality checks?
+    -   TBD
+    -   TBD
+-   Can you see any inconsistencies in between the figures and text?
+    -   TBD
+-   Are there any potential errors in the results section?
+    -   TBD
 
 ## Discussion
-* Does the discussion provide interpretation, described significance of the results?
-  * TBD
-* Does the interpretation arise logically from the data? Is the discussion interesting? Does it point out any conclusions/inferences not immediately obvious from the results?
-  * TBD
-  * TBD
-  * TBD
-* Does the discussion mention limitations of the study and points to future research?
-  * TBD
+
+-   Does the discussion provide interpretation, described significance of the results?
+    -   TBD
+-   Does the interpretation arise logically from the data? Is the discussion interesting? Does it point out any conclusions/inferences not immediately obvious from the results?
+    -   TBD
+    -   TBD
+    -   TBD
+-   Does the discussion mention limitations of the study and points to future research?
+    -   TBD
 
 ## Conclusion
-* Did you like the paper? What did you like about it? What did you not? Could it be mostly understood by more general audience?
-  * TBD
-  * TBD
-  * TBD
-* Did you learn anything new?
-  * TBD
-* Would you recommend it to others? Why yes, why not?
-  * TBD
+
+-   Did you like the paper? What did you like about it? What did you not? Could it be mostly understood by more general audience?
+    -   TBD
+    -   TBD
+    -   TBD
+-   Did you learn anything new?
+    -   TBD
+-   Would you recommend it to others? Why yes, why not?
+    -   TBD
+:::
