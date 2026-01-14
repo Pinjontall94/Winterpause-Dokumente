@@ -60,8 +60,8 @@ Article URL/DOI: https://doi.org/10.1038/s41467-021-22858-x
   * To my knowledge, yes, their methodology was sound. The germplasm for Frijol Bayo was purified with 3 generations in the screenhouse,
   and W6 selfed for several generations from an existing 1955 USDA accession. Frijol Bayo was sequenced with WGS and PacBio long reads
   to create the scaffolds for alignment. W6 tepary's genome was built from a Chromium 10x de novo library, aligning reads by flanking
-  illumina SNPs with BWA scaffolds. The two genomes were measured for quality (BUSCO) and size, then annotated against a specific library of plant
-  protein-encoding seqs.
+  illumina SNPs with BWA scaffolds. The two genomes were measured for quality (BUSCO) and size, then annotated against a specific library
+  of plant protein-encoding seqs.
 * Are they described in sufficient details (for example software and software version) to reproduce the research?
   * Yes, all subsections of the methods list the assembly, alignment, statistical, and visualization software
   used, along with their associated versions and source code repositories where available.
@@ -78,11 +78,12 @@ Article URL/DOI: https://doi.org/10.1038/s41467-021-22858-x
 
 ## Results
 * Can the results section be easily followed? Are there subheadings to help guide the reader?
-  * TBD
-  * TBD
-* Are the figures readable and is the information well presented? Are the legends/captions sufficient to understand the figures even without reading the whole text in detail?
-  * TBD
-  * TBD
+  * Yes and yes [expand]
+* Are the figures readable and is the information well presented? Are the legends/captions sufficient to understand the figures even 
+without reading the whole text in detail?
+  * Yes
+  * Yes, with the prerequisite of understanding the underlying concepts. They used a gene expression network diagram particularly well to explain 
+  how P. acutifolia and P. vulgaris differ in their early heat stress responses
 * Do the text and figures complement each other well or are there repetitions which could be
 avoided? Are all figures/tables mentioned in the text? Does the text expand on them?
   * TBD
