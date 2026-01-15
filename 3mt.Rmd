@@ -21,6 +21,24 @@ A followup to Lazcano, Boyd, et. al 2021:
 -   Account for:
     -   geno x env effects (cultivar x soil, control other growing conditions)
 
+## Why is studying this important?
+
+1.  Drought and nutrient stress-related crop losses affect millions of people
+    every year to the tune of billions in lost value
+2.  We know from previous studies on various crops that the microbiome in a
+    plant's root system and surrounding soil plays an important role in the
+    management of these stresses
+3.  Still mysterious how this all works, but important to find the underlying
+    patterns
+4.  We know from previous research that among other crops, strawberries are able
+    to recruit from a pool of existing microbes in the soil to promote systemic
+    resistance to disease and increase nutrient uptake
+5.  Research mostly focused on biotic stress, more in-depth research is needed
+    for abiotic stresses: nutrition and drought
+6.  Mitigating these without damaging the environment further with pollutants
+    like bromine-based fumigants will be more important with every passing year
+    as we face the effects of climate change
+
 ## Field Trial
 
 Use the same list of cultivars in Lazcano Boyd et al '21 for consistency's sake
