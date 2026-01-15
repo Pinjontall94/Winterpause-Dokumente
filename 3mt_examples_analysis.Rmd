@@ -8,56 +8,79 @@ editor_options:
     wrap: 80
 ---
 
-# Niamh MacSweeney - Uni Edinburgh - Adolescent Depression 3MT Transcript
+# 3MT
 
 ## Intro
 
 ### Relate to a general audience/i.e. why do we care?
 
-*Our teenage years are a time of immense change. It's a whirlwind for our
-biology, our psychology, and our social worlds. Like Dorothy in The Wizard of
-Oz, were swept up into this world that we can't quite comprehend leaving the
-primary colors of our childhood behind. We find ourselves stumbling through a
-kaleidoscope of bad hair days troublesome skin and pressure to keep up with the
-latest airs and Instagram.*
+-   Abiotic stresses on crops, such as drought or nutrient stress, affect
+    millions of people every year to the tune of billions of dollars of lost
+    value for farmers, and contribute to rising food prices/lower availability
+    for everyone
+
+-   Climate change is projected to worsen these, either directly through
+    desertification, or indirectly
+
+-   Strawberry alone is a high value crop (3 billion/yr in the US), with China
+    being the largest producer
+
+-   Can't use soil fumigants forever, methyl bromide messes up the ozone (phased
+    out in 2016 with the Montreal protocol), and replacements don't work nearly
+    as well
 
 ### Describe the problem/gap in current understanding
 
-*However, unlike Dorothy, navigating adolescence is not as simple as following
-the yellow brick road. In fact, it's a time of significant vulnerability for
-mental illness, especially depression. Over half of depression cases emerge by
-the age of 25, and according to the World Health Organization, depression is the
-leading cause of illness and disability in youth. Adolescent depression is
-typically a more severe form of the disorder, and it's notoriously difficult to
-treat. What's more is that the risk for recurrence increases with each episode
-experienced. After one depressive episode the risk for recurrence is 60%, but by
-the third episode, this risk has risen to a sobering 90 percent. So on a closer
-inspection of this whirlwind it appears that there are prevailing winds in this
-direction towards mental illness that increase in strength with the number of
-depressive episodes experienced making it more and more difficult to move back
-over here towards well-being. It would also seem that the experience of
-depression itself makes some young people more vulnerable to further depressive
-episodes, however there are others that only experienced a single episode of
-depression.*
+-   The microbiome in a plant's root system and surrounding soil plays an
+    important role in the management of these stresses
+-   Still mysterious how this all works, but important to find the underlying
+    patterns
+-   We know from previous research that among other crops, strawberries are able
+    to recruit from a pool of existing microbes in the soil to promote systemic
+    resistance to disease and increase nutrient uptake
+-   Research mostly focused on biotic stress, more in-depth research is needed
+    for abiotic stresses
+-   Mitigating these without damaging the environment further with pollutants
+    like bromine-based fumigants to control will be more important with every
+    passing year as we face the effects of climate change
 
 ## Research Question
 
 *Why is this the case? Are there certain risk and resilience factors that can
 help explain these different trajectories?*
 
+We've recently established that strawberries can indeed recruit helpful microbes
+from the surrounding soil to induce disease resistance, and even some
+significant evidence that this influences nutrient uptake. But the mechanism and
+plasticity of these effects remain unknown, and determining those depends on
+teasing out those genotype by environment effects. What are those effects?
+
 ## Proposed Study
 
-*To answer these questions, I'll recruit two groups of young people: one with a
-history of depression, and another who have never been depressed. My PhD will
-examine biological factors like stress response, psychological factors such as
-coping styles, as well as social factors like interpersonal relationships. And
-it's also really important that we give young people a voice, so I'll conduct
-interviews with these young people, to capture the lived experience of
-adolescent depression.*
+To answer this question, I'll use the same list of cultivars in Lazcano Boyd et
+al '21 for consistency's sake (unless a better cross section of comm. 🍓
+cultivars re: abiotic stress resistance can be determined). Trial overview:
+
+-   20 plants per plot, 0.3m raised beds
+-   Treatment:
+    -   field soil\* with various\*\* macronutrient and drought stress factor
+        levels
+-   Control:
+    -   field soil\*, standardized watering and fertilizer regimen
+
+Field soil measured by soil classification, texture, slope, conductivity, pH,
+cation exchange capacity, and percent organic matter. Additionally, levels of
+the specific, tested nutrient levels affected by the treatment groups will be
+measured as follows:
+
+-   Ca:Mg ratio
+-   Water content (neutron moisture gauge)
+-   NPK
+
+## 
 
 ### Research Goal (What do you hope to find out with this study?)
 
-*The goal of this research is to develop novel interventions so that young
-people can build long-term resilience against depression ultimately we want to
-change the direction of these prevailing winds allowing young people to pave
-their own yellow brick road away from illness and towards health.*
+The goal of this study is to determine what patterns, if any, exist between the
+rhizosphere microbiome composition and strawberry drought resistance and
+nutrient uptake. With this information in hand, we'll have valuable.
