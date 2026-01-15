@@ -46,7 +46,6 @@ Use the same list of cultivars in Lazcano Boyd et al '21 for consistency's sake
 resistance can be determined). Trial overview:
 
 -   20 plants per plot, 0.3m raised beds
--   
 -   Treatment:
     -   field soil\* with various\*\* macronutrient and drought stress factor
         levels
