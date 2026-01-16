@@ -1,17 +1,18 @@
 ---
-title: "critical-analysis"
+title: "Critical Analysis of Research Paper"
 author: "Sammi Johnson"
 date: "2026-01-16"
 output:
-  pdf_document: default
+  word_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Cover Page
+# Critical Analysis Of A Research Paper
 
 Author: Sammi Johnson
 
@@ -23,48 +24,32 @@ Article URL/DOI: <https://doi.org/10.1038/s41467-021-22858-x>
 
 ------------------------------------------------------------------------
 
-# Introduction
+This article by Moghaddam, Oladzad, et. al aims to report on the assembly of a reference genome for tepary bean (P. actufolius) as it relates to common bean (P. vulgaris). The subject matter personally interested me, as I grew up in an arid environment and have long been interested in how crops can manage to survive in those conditions.
 
-This paper aims to report on the assembly of a reference genome for tepary bean (*P. actufolius*), and provide insight into how its heat and drought resistance works. It makes the case that, as climate change threatens production of common bean through heat and aridity, the desert-adapted and closely-related tepary bean presents a valuable resource of traits to weather that challenge.
+## Abstract: 
+The abstract is accessible to an audience with a passing knowledge of biology, insofar as knowing what a genome is in broad strokes as a corpus of a species’ genetic information. Additionally, it reflects the content of the paper by providing a short description of the primary findings and their utility to agriculture.
 
-I grew up in an arid environment and have been long been interested in how crops can manage to survive in those conditions, especially as more of the world faces aridity with climate change.
+## Introduction:
+The authors directly lay out the importance of finding genetic resources for common bean, and that this study has immediate implications to agriculture beyond tepary bean itself. Moreover, it makes the case that understanding the differences between both species’ abiotic stress resistance will be crucial in understanding and improving common bean crop performance. Links to prior research also establish that tepary bean as at least a close enough relative to common bean for successful hybridization attempts, conferring beneficial traits to and from both species.
 
-# Article Analysis
+## Methods:
+To my understanding, the authors’ methodology was sound. Two lines of tepary bean were established (one cultivated, one wild) alongside one common bean line. Tepary lines were sequenced by WGS, long reads, and where necessary for stress tests, RNAseq on all three. The genomes were measured for quality (BUSCO) and size, then annotated against a specific library of plant protein-encoding sequences.
 
-## Abstract
+All subsections of the methods list the software used, along with their associated versions and source code repositories where available, though sadly not all command line flags were listed. Most approaches seem up to date, though the platform for long reads (PacBio RS) is outdated by two generations of SMRT sequencing. The data is all available on publicly accessible archives under bioproject PRJNA607288. 
 
-The abstract is accessible to an audience with a passing knowledge of biology, insofar as knowing what a genome is in broad strokes as a corpus of a species' genetic information. Additionally, it reflects the content of the paper by providing a short description of the findings: tepary beans' genome reveals it as a close relative of common bean, and how this could be utilized in heat-resistance breeding efforts for important protein legumes in a changing climate.
+## Results:
+The results section follows understandably from the abstract, with subheadings marking the crucial findings. The paper’s figures are well presented, given the complexity they encompass, and the legends and captions are succinct but sufficient.
 
-## Introduction
+The researchers used a gene expression network diagram particularly well to explain heat stress response differences between common and tepary bean. Likewise, the underlying text and said figures complement each other well, certainly helping me understand some less intuitive relationships (e.g. Ks). All figures are referenced when the results reach a point where text starts to hit its limit as an expressive medium. And, for those who are already familiar with the analytical techniques and measurements presented in the figures, the text provides needed context.
 
-The authors' directly lay out the importance of finding genetic resources for common bean, that this study has immediate implications to agriculture beyond tepary bean itself. Moreover, it makes the case that understanding the differences between both species' abiotic stress resistance will be crucial in understanding and improving common bean crop performance. Links to prior research also establish that tepary bean as at least a close enough relative to common bean for successful hybridization attempts, conferring beneficial traits to and from both species.
+Most of the results text and visuals are understandable intuitively. The paper does a good job making it clear why each test is performed. In the estimated divergence time chart between the bean species (fig. 1d), I had a difficult time parsing the overlapping thin lines. That being said, I understood the point it was making with respect to the text and I don’t think that could have been avoided without compromising clarity further.
 
-## Methods
+The results also appear reliable, given the quality checks undertaken with the genetic samples, of the genome assemblies themselves, and the authors’ awareness of  differences. As far as I can ascertain, the figures and text match closely with each other, and there weren’t errors in the results.
 
-To the best of my understanding, the authors' methodology was sound. The germplasm for Frijol Bayo was purified with 3 generations in the screenhouse, and the wildtype, W6, selfed for several generations from an existing 1955 USDA accession. Frijol Bayo was sequenced with WGS and PacBio long reads to create the scaffolds for alignment. Meanwhile, W6 tepary's genome was built from a Chromium 10x de novo library, aligning reads by flanking illumina SNPs with BWA scaffolds. The two genomes were measured for quality (BUSCO) and size, then annotated against a specific library of plant protein-encoding seqs.
+## Discussion:
+The discussion provided helpful interpretation of the results, putting it in clear terms how they support the hypothesis that tepary is a close sister species to common bean (as suggested by prior genetic research but without comprehensive molecular evidence). The authors posit that this is directly important to improving common bean breeding efforts in the face of climate change, as tepary is confirmed to represent a well of heat and aridity tolerance traits.
 
-All subsections of the methods list the assembly, alignment, statistical, and visualization software used, along with their associated versions and source code repositories where available. Most approaches seem up to date, though the platform for long reads (PacBio RS) is outdated by two generations (RSII and Sequel) of SMRT sequencing.
-
-The data is all available on publicly accessible archives under bioproject PRJNA607288. The versions of all used software were listed, but there isn't a repository for the pipeline, so presumably these were processed interactively.
-
-Sadly, not all command line flags and parameters are listed in the article. Thus, reproducing the analysis relies on inference from the use cases described in the methods section. Additionally, the overall pipeline does not have a dedicated repository, leading me to believe that the overall process must have been handled interactively.
-
-## Results
-
-The results section follows understandably from the abstract, with subheadings marking the crucial findings. The paper's figures are well presented, given the complexity they encompass, and the legends and captions are succint but sufficient.
-
-The researchers used a gene expression network diagram particularly well to explain heat stress response differences between common and tepary bean. Likewise, the underlying text and said figures complement each other well, certainly helping me understand some less intuitive relationships (I wasn't familiar with K_s before, for example). All figures are referenced when the results reach a point where text starts to hit its limit as an expressive medium. And, for those who are already familiar with the analytical techniques and measurements presented in the figures, the text provides needed context.
-
-Most of the results text and visuals are understandable intuitively. The paper does a good job making it clear why each test is performed on the road to establishing just how closely related these species are, and in what way. For example, synteny analysis revealed that despite a lack of large-scale interchromosomal structural changes, smaller shuffling of genes throughout and internal rearrangements on chromosomes 2 and 9 may explain the difficulties in creating viable hybrids. Another curious finding is that tepary uses only a small number of heat shock proteins compared to common bean, seemingly relying more on factors tied to cell cycle arrest. Not all results were as legible in the figures, however. In the estimated divergence time chart between the bean species (fig. 1d), I had a difficult time seeing the overlapping thin lines clearly to find any particular bean-bean relationship. That being said, I understood the point it was making with respect to the text (that tepary is a recently divergent sister taxon of common bean) and I don't think that could have been avoided without compromising clarity further.
-
-The results also appear reliable, given the quality checks undertaken with the genetic samples, of the genome assemblies themselves, and the authors' awareness that differences. As far as I can ascertain, the figures and text match closely with each other, and there weren't errors in the results.
-
-## Discussion
-
-As someone familiar with the majority of the processes used in the methods section (along with their rationales) but unsure how the pieces fit together, the discussion section was invaluable for my understanding.
-
-## Conclusion
-
+## Conclusion:
 I enjoyed this article and learned new information! In particular, I learned how the regulatory cascade works in beans of this clade to confer heat stress resistance. I also learned to what extent these species are related, letting hybridization occur at all, even if it still requires embryo rescue.
 
-In spite of minor shortcomings in reproducibility, and perhaps some older sequencing technologies, the fundamental principles of study seem solid to me, and I'd recommend anyone interested in abiotic stress trait evolution read it.
+Despite minor shortcomings in reproducibility, and perhaps some older sequencing technologies, the fundamental principles of study seem solid to me, and I’d recommend anyone interested in abiotic stress trait evolution read it.
