@@ -33,13 +33,17 @@ editor_options:
 
 -   The microbiome in a plant's root system and surrounding soil plays an
     important role in the management of these stresses
+
 -   Still mysterious how this all works, but important to find the underlying
     patterns
+
 -   We know from previous research that among other crops, strawberries are able
     to recruit from a pool of existing microbes in the soil to promote systemic
     resistance to disease and increase nutrient uptake
+
 -   Research mostly focused on biotic stress, more in-depth research is needed
     for abiotic stresses
+
 -   Mitigating these without damaging the environment further with pollutants
     like bromine-based fumigants to control will be more important with every
     passing year as we face the effects of climate change
@@ -49,38 +53,38 @@ editor_options:
 *Why is this the case? Are there certain risk and resilience factors that can
 help explain these different trajectories?*
 
-We've recently established that strawberries can indeed recruit helpful microbes
-from the surrounding soil to induce disease resistance, and even some
-significant evidence that this influences nutrient uptake. But the mechanism and
-plasticity of these effects remain unknown, and determining those depends on
-teasing out those genotype by environment effects. What are those effects?
+-   Strawberries can indeed recruit helpful microbes from the surrounding soil
+    to induce disease resistance
+
+    -   even some significant evidence that this influences nutrient uptake
+
+-   But the mechanism and plasticity of these remain unexplained
+
+-   To figure those out we must first tease out those genotype by environment
+    effects. What are those effects?
 
 ## Proposed Study
 
-To answer this question, I'll use the same list of cultivars in Lazcano Boyd et
-al '21 for consistency's sake (unless a better cross section of comm. 🍓
-cultivars re: abiotic stress resistance can be determined). Trial overview:
+-   Use a cross section of commercial strawberry cultivars that are known to
+    genetically distant, grow in the greenhouse
 
--   20 plants per plot, 0.3m raised beds
--   Treatment:
-    -   field soil\* with various\*\* macronutrient and drought stress factor
-        levels
--   Control:
-    -   field soil\*, standardized watering and fertilizer regimen
+-   Establish treatment and control groups of nutrient and water stresses, and
+    one watered and fed normally
 
-Field soil measured by soil classification, texture, slope, conductivity, pH,
-cation exchange capacity, and percent organic matter. Additionally, levels of
-the specific, tested nutrient levels affected by the treatment groups will be
-measured as follows:
+-   Within each group, use a variety of soil types and day lengths as the
+    dependent variables
 
--   Ca:Mg ratio
--   Water content (neutron moisture gauge)
--   NPK
+-   Establish control pots with no strawberries to represent bulk soil
+
+-   Genotype soil samples by 16s rRNA and cluster into op. taxo units
 
 ## 
 
 ### Research Goal (What do you hope to find out with this study?)
 
-The goal of this study is to determine what patterns, if any, exist between the
-rhizosphere microbiome composition and strawberry drought resistance and
-nutrient uptake. With this information in hand, we'll have valuable.
+Goal:
+
+-   determine what patterns, if any, exist between the rhizosphere microbiome
+    composition and strawberry drought resistance and nutrient uptake.
+
+-   With this information in hand, we'll have valuable

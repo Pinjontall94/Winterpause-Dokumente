@@ -1,0 +1,86 @@
+---
+title: "Critical Analysis Instructions"
+author: "Sammi Johnson"
+date: "2026-01-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+-   Short information about the paper. Summary of main aims and findings.
+
+-   Why did you choose this paper
+
+# Main Body
+
+## Abstract
+
+-   Does it reflect content of the paper?
+
+-   Does it describe the main findings?
+
+-   Is it accessible to more general audience?
+
+## Introduction
+
+-   Does it give sufficient background to understand the rationale for research?
+
+    Does it link/refer to previous research?
+
+## Methods
+
+-   To your knowledge, are the methods appropriate?
+
+-   Are they described in sufficient details (for example software and software version) to reproduce the research?
+
+-   Are the methods state of the art or is the approach outdated? (for example short reads used for assembly when long reads could be produced)
+
+-   Is the data/code publicly available?
+
+-   Can you pinpoint any weaknesses of the study design?
+
+## Results
+
+-   Can the results section be easily followed? Are there subheadings to help guide the reader?
+
+-   Are the figures readable and is the information well presented? Are the legends/captions sufficient to understand the figures even without reading the whole text in detail?
+
+-   Do the text and figures complement each other well or are there repetitions which could be avoided? Are all figures/tables mentioned in the text? Does the text expand on them?
+
+-   Are there sections of text or figures/tables which are difficult to understand?
+
+-   Do the results appear reliable? Are there sufficient quality checks?
+
+-   Can you see any inconsistencies in between the figures and text?
+
+-   Are there any potential errors in the results section?
+
+## Discussion
+
+-   Does the discussion provide interpretation, described significance of the results?
+
+-   Does the interpretation arise logically from the data? Is the discussion interesting? Does it point out any conclusions/inferences not immediately obvious from the results?
+
+    -   TBD
+    -   TBD
+    -   TBD
+
+-   Does the discussion mention limitations of the study and points to future research?
+
+    -   TBD
+
+## Conclusion
+
+-   Did you like the paper? What did you like about it? What did you not? Could it be mostly understood by more general audience?
+
+    -   TBD
+    -   TBD
+    -   TBD
+
+-   Did you learn anything new?
+
+-   Would you recommend it to others? Why yes, why not?
